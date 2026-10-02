@@ -3,81 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diego de la Ossa</title>
+  <title>Diego de la Ossa | Estudiante de Ingeniería de Software</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="pagina">
 
-  <header>
-    <img src="foto.jpg" alt="Foto de Diego de la Ossa" width="110" height="110">
-    <h1>Diego de la Ossa</h1>
-    <p>Estudiante de Ingeniería de Software<br>Santa Marta, Magdalena, Colombia</p>
-  </header>
+    <header class="cabecera">
+      <img src="foto.jpg" alt="Foto de Diego de la Ossa" width="120" height="120">
+      <div>
+        <h1>Diego de la Ossa</h1>
+        <p class="rol">Estudiante de Ingeniería de Software</p>
+        <p class="lugar">Santa Marta, Magdalena, Colombia</p>
+      </div>
+    </header>
 
-  <main>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-    <section>
-      <h2>Sobre mí</h2>
-      <p>
-        Tengo 19 años, soy estudiante de Ingeniería de Software y vivo en Santa Marta. Me gusta
-        entender cómo funcionan las cosas por dentro y convertir una idea en algo que se pueda usar.
-      </p>
-      <p>
-        Estoy en formación y aprendo construyendo proyectos propios. Busco seguir mejorando mis
-        bases y ganar experiencia trabajando con otras personas.
-      </p>
-    </section>
+    <main>
 
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Lenguajes: HTML, CSS, JavaScript, Python, Java, SQL</li>
-        <li>Herramientas: Git, GitHub, Visual Studio Code</li>
-        <li>Personales: trabajo en equipo, aprendizaje autónomo, comunicación</li>
-      </ul>
-    </section>
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Tengo 19 años, soy estudiante de Ingeniería de Software y vivo en Santa Marta. Me gusta
+          entender cómo funcionan las cosas por dentro y convertir una idea en algo que se pueda
+          usar, desde la interfaz que ve el usuario hasta la lógica que la sostiene.
+        </p>
+        <p>
+          Estoy en formación y aprendo construyendo proyectos propios. Busco seguir mejorando mis
+          bases y ganar experiencia trabajando con otras personas.
+        </p>
+      </section>
 
-    <section>
-      <h2>Proyectos</h2>
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <dl class="habilidades">
+          <dt>Lenguajes</dt>
+          <dd>HTML, CSS, JavaScript, Python, Java, SQL</dd>
+          <dt>Herramientas</dt>
+          <dd>Git, GitHub, Visual Studio Code</dd>
+          <dt>Personales</dt>
+          <dd>Trabajo en equipo, aprendizaje autónomo, comunicación</dd>
+        </dl>
+      </section>
 
-      <h3>Proyecto de las 18 interfaces</h3>
-      <p>Proyecto en el que desarrollé 18 interfaces de usuario.</p>
-      <!-- Cuando tengas el enlace, descomenta esto:
-      <p><a href="URL_DEL_REPOSITORIO">Ver en GitHub</a></p>
-      -->
+      <section id="proyectos">
+        <h2>Proyectos</h2>
 
-      <!-- PLANTILLA para agregar más proyectos: copia este bloque y cambia los datos.
-      <h3>Nombre del proyecto</h3>
-      <p>Descripción breve de qué hace.</p>
-      <p><a href="URL_DEL_REPOSITORIO">Ver en GitHub</a></p>
-      -->
-    </section>
+        <article class="proyecto">
+          <h3>Proyecto de las 18 interfaces</h3>
+          <p>Proyecto en el que desarrollé 18 interfaces de usuario.</p>
+          <!-- Cuando tengas el enlace, descomenta esto:
+          <p><a href="URL_DEL_REPOSITORIO">Ver en GitHub</a></p>
+          -->
+        </article>
 
-    <section>
-      <h2>Formación y experiencia</h2>
-      <p>
-        <strong>Estudios:</strong> Ingeniería de Software, Universidad Cooperativa de Colombia (en curso).
-      </p>
-      <p>
-        <strong>Experiencia laboral:</strong> por ahora no tengo. Estoy enfocado en mis estudios y en
-        construir proyectos propios.
-      </p>
-    </section>
+        <!-- PLANTILLA para agregar más proyectos: copia este bloque y cambia los datos.
+        <article class="proyecto">
+          <h3>Nombre del proyecto</h3>
+          <p>Descripción breve de qué hace.</p>
+          <p><a href="URL_DEL_REPOSITORIO">Ver en GitHub</a></p>
+        </article>
+        -->
+      </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <ul>
-        <li>Teléfono: <a href="tel:+573004799166">300 479 9166</a></li>
-        <li>WhatsApp: <a href="https://wa.me/573004799166">enviar mensaje</a></li>
-        <li>GitHub: <a href="https://github.com/DiegoDeLaOssa27">github.com/DiegoDeLaOssa27</a></li>
-      </ul>
-    </section>
+      <section id="formacion">
+        <h2>Formación y experiencia</h2>
+        <p>
+          <strong>Estudios:</strong> Ingeniería de Software, Universidad Cooperativa de Colombia (en curso).
+        </p>
+        <p>
+          <strong>Experiencia laboral:</strong> por ahora no tengo. Estoy enfocado en mis estudios y
+          en construir proyectos propios.
+        </p>
+      </section>
 
-  </main>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <ul class="contacto">
+          <li>Teléfono: <a href="tel:+573004799166">300 479 9166</a></li>
+          <li>WhatsApp: <a href="https://wa.me/573004799166">enviar mensaje</a></li>
+          <li>GitHub: <a href="https://github.com/DiegoDeLaOssa27">github.com/DiegoDeLaOssa27</a></li>
+        </ul>
+      </section>
 
-  <footer>
-    <p>© 2026 Diego de la Ossa</p>
-  </footer>
+    </main>
 
+    <footer class="pie">
+      <p>© 2026 Diego de la Ossa</p>
+    </footer>
+
+  </div>
 </body>
 </html>
